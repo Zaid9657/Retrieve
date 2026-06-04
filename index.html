@@ -1,0 +1,41 @@
+# Training — Zaid
+
+Personal training app. Posture + hip performance program.
+
+## Stack
+- React 18 + Vite
+- localStorage for persistence (device-only)
+- Lucide icons
+
+## Run locally
+```bash
+npm install
+npm run dev
+```
+
+## Deploy to Netlify (drag & drop)
+
+1. Open terminal, `cd` into this folder
+2. `npm install`
+3. `npm run build`
+4. Go to https://app.netlify.com/drop
+5. Drag the `dist` folder into the page
+6. Done. Get your URL.
+
+## Deploy with GitHub auto-deploy
+
+1. Create a new repo on github.com
+2. Upload all these files via "Add file → Upload files" on the GitHub web UI
+3. Commit
+4. Go to https://app.netlify.com/start, connect the repo
+5. Build settings auto-detect from `netlify.toml`
+6. Every push to main = auto-deploy
+
+## Add to phone home screen
+
+1. Open the deployed URL in Safari (iOS) or Chrome (Android)
+2. Share menu → Add to Home Screen
+3. Opens like a native app
+
+## Data
+All training logs and mobility checkboxes stored in browser localStorage. Clearing browser data wipes it. No cloud sync, no backend.
